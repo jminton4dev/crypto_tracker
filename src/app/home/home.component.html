@@ -1,0 +1,21 @@
+<mat-card><h1>Crypto Tracker</h1>
+  <hr>
+  <table>
+    <thead>
+      <tr>
+        <th>Coin Name</th>
+        <th>Symbol</th>
+        <th>Latest Price</th>
+        <th></th>
+        </tr>
+      </thead>
+      <tbody *ngIf="!isloading">
+        <tr *ngFor="let coin of coinInfo">
+          <td>{{coin.coin_name}}</td>
+          <td>{{coin.coin_id}}</td>
+          <td>${{coin.last_price | number : '1.2-2'}}</td>
+          <td><button mat-button (click)="coinDetail(coin)">Details</button></td>
+          </tr>
+        </tbody>
+  </table>
+</mat-card>
