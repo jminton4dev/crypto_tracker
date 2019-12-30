@@ -49,7 +49,6 @@ export class HomeComponent implements OnInit {
   }
 
   coinDetail(coin){
-    console.log('Coin Detail',coin);
     const dialogConfig = new MatDialogConfig();
     dialogConfig.disableClose = true;
     dialogConfig .id = "modal-component";
