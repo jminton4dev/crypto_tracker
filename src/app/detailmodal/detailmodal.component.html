@@ -4,8 +4,8 @@
     </header>
     <section id="modal-body">
       <h2>{{coinInfo.coin_name}} | {{coinInfo.coin_id}}</h2>
-      <h4>Price: {{coinInfo.last_price | number : '1.2-2' }}<br>
-      24-Hour Volume: {{coinInfo.last_price | number : '1.2-2' }}<br>
+      <h4>Price: ${{coinInfo.last_price | number : '1.2-2' }}<br>
+      24-Hour Volume: ${{coinInfo.last_price | number : '1.2-2' }}<br>
       $100 = {{coinInfo100 }}<br>
       $250 = {{coinInfo250 }}<br>
       $5,000 = {{coinInfo5000}}</h4>
